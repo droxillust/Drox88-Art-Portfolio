@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Art Portfolio Contact</title>
+  <meta name="description" content="artist contact">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a class="brand" href="home.html">DROX88 ART</a>
+    <button id="menuToggleContact" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinksContact">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <form id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" required minlength="2" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required minlength="10"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="yearContact"></span> Drox88 Art Portfolio</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
